@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Admin Login</title>
+</head>
+<body>
+<h1>Admin Login</h1>
+<h2>Since this is an example login, here is an admin account you can log into:</h2>
+<h2>Name: Bob      Code: 54321    Permissions: Administrator (view logs and blacklist users)</h2>
+<form action="adminlogin" method="post">
+    <label for="name">Name</label>
+    <input type="name" name="username" value="" required>
+    <label for="code">Code</label>
+    <input type="code" name="usercode" value="" required>
+    <input type="submit" value="Submit">
+</form>
+<button onclick="window.location.href='/demo/home';">
+  Go back
+</button>
+</body>
+</html>
