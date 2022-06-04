@@ -1,3 +1,12 @@
+billy was given access
+joe was delined access (blacklist)
+bob was given access to admin
+amity was declined access to admin
+amity was declined access to admin
+amity was declined access to admin
+amity was declined access to admin
+amity was declined access to admin
+bob was given access to admin
 bob was given access to admin
 bob was given access to admin
 dffdsfsdf was declined access

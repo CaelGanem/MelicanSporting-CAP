@@ -67,7 +67,10 @@ def adminlogin():
         time=currenttime
         with open('templates/info.json', 'w') as f:
             f.write('{"Name": "' + name + '", "Code": "' + code + '", "Time": "' + time + '"}')
-        return render_template('demo/adminhome.html', name=request.form['username'], time=currenttime, response=response)
+        if response == ("Sorry, you can't access this admin resourse!"):
+          return ("Sorry, you can't access this admin resourse!")
+        else:
+          return render_template('demo/adminhome.html', name=request.form['username'], time=currenttime, response=response)
     elif request.method == 'GET':
         return render_template('demo/redirecthome.html')
     else:
